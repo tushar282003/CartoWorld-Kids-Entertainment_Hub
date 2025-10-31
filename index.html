@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartoWorld</title>
+    <link rel="stylesheet" href="cartoon.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" /> <!-- for icons -->
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="CartoWorld Logo" class="logo">
+            <h1><span>C</span>arto<span>W</span>orld</h1>
+        </div>
+
+        <!-- Search Box -->
+        <div id="search-container">
+            <input type="text" id="searchInput" placeholder="Search by name...">
+            <button onclick="searchItem()">🔍</button>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <i class="ri-menu-line"></i>
+        </div>
+
+        <!-- header Part -->
+        <nav id="navbar">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <!-- <li><a href="#">About Us</a></li> -->
+                <li class="dropdown">
+                    <a href="#" id="categoryToggle">Categories ▾</a>
+                    <ul class="dropdown-menu" id="dropdownMenu">
+                        <li><a href="#rp">Rhymes & Poems</a></li>
+                        <li><a href="#ce">Cartoon Episodes</a></li>
+                        <li><a href="#lv">Learning Videos</a></li>
+                        <li><a href="#ss">Short Stories</a></li>
+                        <li><a href="#cm">Cartoon Movies</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" id="authBtn"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- for video -->
+    <section class="hero-video">
+        <video autoplay muted loop playsinline>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">
+            <h1>Welcome to CartoWorld!</h1>
+            <p>Watch, Learn & Laugh Together</p>
+        </div>
+    </section>
+
+
+
+    <!-- Rhymes and Poems Section -->
+    <section id="rp" class="trending-section">
+        <div class="section-header">
+            <h2>Rhymes & Poems</h2>
+        </div>
+
+        <div class="card-container">
+            <div class="card" data-video="https://www.youtube.com/embed/FYojUSFfuMg?si=HHRRzyOGoA0SvpZy">
+                <img src="img/s1_jack.jpg" alt="jack and jill">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/18litAjUadc?si=2E8WNC02nT3IPre8">
+                <img src="img/s1_machli.jpg" alt="machli">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/AIIj0mBX1jU?si=GJw0VCKJTRs-Ck4P">
+                <img src="img/s1_humpty.jpg" alt="humpty dumpty">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/h9d9CCCAlWk?si=Bvo0cxif2uEe-Kaw">
+                <img src="img/s1_titli.jpg" alt="titli">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/yCjJyiqpAuU?si=0vLLU2vkxQ-PEPy6">
+                <img src="img/s1_twinkle.jpg" alt="twinkle little ">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/i35AUg11hvo?si=ikwpNR3pRwsdUNzy">
+                <img src="img/s1_hathi.jpg" alt="ek mota hathi">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/VI5N37BqwwI?si=IM-p3PRu9jJydoii">
+                <img src="img/s1_nani.jpg" alt="nani teri morni">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/jFYiT3_65kE?si=ao0DTYcTx7JIoW_E">
+                <img src="img/s1_chanda.jpg" alt="chanda mama ">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/6rRRAVSilss?si=j8mD3Sl5IDqiktY3">
+                <img src="img/s1_rh.jpg" alt="tamatar">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/F4tHL8reNCs?si=YjbUxmyJjeDEQWR-">
+                <img src="img/s1_jho.jpg" alt="jhonny">
+                <div class="overlay">Watch Now</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Cartoon Episodes Section -->
+    <section id="ce" class="trending-section">
+        <div class="section-header">
+            <h2>Cartoon Episodes</h2>
+        </div>
+
+        <div class="card-container">
+            <div class="card" data-video="https://www.youtube.com/embed/qbVZ99VJ2Y0?si=Rx4sSmpgad6XQSBh">
+                <img src="img/s2_doremon.jpg" alt="Doraemon">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/QmEFCJxOV5s?si=ehdSYamyXGqtUvjg">
+                <img src="img/sm_pp.jpg" alt="Peppa Pig">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/uXCmObmP_Eo?si=k3MCWnZCI6Sczy97">
+                <img src="img/sm_motu.jpg" alt="Motu Patlu">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/suQU5XV82MA?si=8OaohmDSZIdN9dVf">
+                <img src="img/sm_rol.jpg" alt="Roll No. 21">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/Or-XHvRZFq0?si=8PUrgVFreYyqJAh_a">
+                <img src="img/tom_cat.jpg" alt="Tom & Jerry">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/PSh-c_Zn3as?si=pJuTmBKHRy6szY4-">
+                <img src="img/s2_shinchan.jpg" alt="Shinchan">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/WgQpD-Xb_M8?si=wfQDfC8vbzW1VWYK">
+                <img src="img/s2_littlesingham.jpg" alt="Little Singham">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/o0IqkvANLtk?si=ijP_6T7I4Qlp6VBJ">
+                <img src="img/s2_poke.webp" alt="Pokemon">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/9onmahpGNxk?si=6Nxn9nEYFaTTIcHJ">
+                <img src="img/s2_ben.jpg" alt="Ben 10">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/_sWIQE62UKc?si=QJcPhFxW0dj7AiJe">
+                <img src="img/sm_shiva.jpg" alt="Shiva">
+                <div class="overlay">Watch Now</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Learning Videos Section -->
+    <section id="lv" class="trending-section">
+        <div class="section-header">
+            <h2>Learning Videos</h2>
+        </div>
+
+        <div class="card-container">
+            <div class="card" data-video="https://www.youtube.com/embed/IIiet2JJVcA?si=DU5Y5KuTejbStfNM">
+                <img src="img/s3_learn.jpg" alt="Learning Intro">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/uNkSyd_mO48?si=R5BiOze5eFuvCGYW">
+                <img src="img/s3_abcsong.jpeg" alt="ABC Song">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/kpy6QEAuLJw?si=sTV0FahkTPH3o3GL">
+                <img src="img/s3_alphabets.jpg" alt="Alphabets">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/tzqSBG3O4AE?si=S3Fdz4oG-ScqnTGY">
+                <img src="img/s3_abctrain.jpg" alt="Alphabets Repeat">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/jlzX8jt0Now?si=Urvpyndhe5q06aJc">
+                <img src="img/s3_shape.jpg" alt="Shapes Learning">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/fYEzqbRGwcY?si=H9Zv3bR48ktjHped">
+                <img src="img/s3_week.jpg" alt="Learning Intro Repeat">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/4jeHK_9NiXI?si=3hIe6hA7fo2WwZhK">
+                <img src="img/s3_animal.jpg" alt="Animal Names">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/5N3w0zxEwVs?si=QMMXYqsNao6EfgMI">
+                <img src="img/s3_month.jpg" alt="Shapes Repeat">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/UcGm_PM2IwY?si=WiM_insXRdu1dZ-m">
+                <img src="img/s3_fruit.jpg" alt="Fruits Name">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/Af1oxU70D7E">
+                <img src="img/s3_varnmala.jpg" alt="Hindi Varnmala">
+                <div class="overlay">Watch Now</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Short Stories Section -->
+    <section id="ss" class="trending-section">
+        <div class="section-header">
+            <h2>Short Stories</h2>
+        </div>
+
+        <div class="card-container">
+            <div class="card" data-video="https://www.youtube.com/embed/uwzViw-T0-A?si=roJHcTaL-xGwYT3z">
+                <img src="img/s5_crow.jpg" alt="Thirsty Crow Story">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/AarI2niTqMk?si=Xt1Uq-3liGFMviQm">
+                <img src="img/m&c.jpg" alt="Monkey and Crocodile">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/Fm9VUjihKJ4?si=ibE2J7qSCmb3kfL5">
+                <img src="img/s5_tortoise.jpg" alt="Tortoise and Hare">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/uwzViw-T0-A?si=roJHcTaL-xGwYT3z">
+                <img src="img/s5_crow.jpg" alt="Thirsty Crow Again">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/AarI2niTqMk?si=Xt1Uq-3liGFMviQm">
+                <img src="img/m&c.jpg" alt="Monkey and Crocodile Again">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/Fm9VUjihKJ4?si=ibE2J7qSCmb3kfL5">
+                <img src="img/s5_tortoise.jpg" alt="Tortoise and Hare Again">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/uwzViw-T0-A?si=roJHcTaL-xGwYT3z">
+                <img src="img/s5_crow.jpg" alt="Thirsty Crow 3rd Time">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/VkYtKU1JKMQ">
+                <img src="img/m&c.jpg" alt="Monkey Again">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/Fm9VUjihKJ4?si=ibE2J7qSCmb3kfL5">
+                <img src="img/s5_tortoise.jpg" alt="Tortoise Again">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/uwzViw-T0-A?si=roJHcTaL-xGwYT3z">
+                <img src="img/s5_crow.jpg" alt="Thirsty Crow 3rd Time">
+                <div class="overlay">Watch Now</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Cartoon Movies Section -->
+    <section id="cm " class="trending-section">
+        <div class="section-header">
+            <h2>Cartoon Movies</h2>
+        </div>
+
+        <div class="card-container">
+            <div class="card" data-video="https://www.youtube.com/embed/tXZTiBQ-8TQ?si=lvmcwsT0bDmzRCg1">
+                <img src="img/sm_bheem.jpg" alt="Chhota Bheem Movie">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/TTGoiToTac0?si=qhDK7tW7gHoGNeqI">
+                <img src="img/s6_motu.jpg" alt="Motu Patlu Movie">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/_Cug0UDg6Xw?si=J5MpLH1ess0Jfuuk">
+                <img src="img/sm_raju.jpg" alt="Raju The Brave Boy">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/DxIxFHUCygU?si=mc2ugmInf-U3txmL">
+                <img src="img/sm_pp.jpg" alt="pakdam pakdai">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/tXZTiBQ-8TQ?si=lvmcwsT0bDmzRCg1">
+                <img src="img/s6_bheem.jpg" alt="Bheem Again">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/tktP7K3NNwM">
+                <img src="img/sm_roll.png" alt="Roll No. 21">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/i3XJbrgN4MQ">
+                <img src="img/sm_bheem.jpg" alt="Chhota Bheem Repeat">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/G8nWSkZnNno">
+                <img src="img/s6_motu.jpg" alt="Motu Patlu Repeat">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/i3XJbrgN4MQ">
+                <img src="img/sm_bheem.jpg" alt="Bheem Again">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/LSZ49yQUY9U">
+                <img src="img/sm_pp.jpg" alt="Peppa Pig Again">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/i3XJbrgN4MQ">
+                <img src="img/s6_bheem.jpg" alt="Chhota Bheem Movie Again">
+                <div class="overlay">Watch Now</div>
+            </div>
+
+            <div class="card" data-video="https://www.youtube.com/embed/tktP7K3NNwM">
+                <img src="img/sm_roll.png" alt="Roll No. 21 Again">
+                <div class="overlay">Watch Now</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Video Popup Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <iframe id="videoFrame" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+    <script src="cartoon.js"></script>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#rp">Rhymes & Poems</a></li>
+                    <li><a href="#ce">Cartoon Episodes</a></li>
+                    <li><a href="#lv">Learning Videos</a></li>
+                    <li><a href="#ss">Short Stories</a></li>
+                    <li><a href="#cm">Cartoon Movies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href=""><p>cartoworld_kids@gmail.com</p></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href=""><p>Whatsapp | Facebook | Instagram</p></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 CartoWorld. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
